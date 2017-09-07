@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'i18n-pipe';
+import { I18nPipe } from 'i18n-pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'i18n-pipe';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    I18nPipe
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -46,7 +46,7 @@ export class AppModule { }
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use pipe in app.component.html -->
 <h1>
   {{title}}
 </h1>
